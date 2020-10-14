@@ -42,6 +42,12 @@ const Login = (props) => {
                     multiline={false}
                 />
 
+                <View style={styles.forgotCon}>
+                    <TouchableOpacity onPress={() => props.navigation.navigate('ForgotPassword')}>
+                        <Text>Forgot Password?</Text>
+                    </TouchableOpacity>
+                </View>
+
                 <MyButton
                     onPress={() => props.navigation.navigate("Register")}
                     text="Sign In"

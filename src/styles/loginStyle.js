@@ -37,6 +37,12 @@ const loginStyle = StyleSheet.create({
         width: Dimensions.get('window').width,
         height: Dimensions.get('window').height / 2.5,
         alignSelf: 'center'
+    },
+    forgotCon: {
+        marginVertical: 5,
+        alignItems: 'flex-end',
+        paddingRight: 50,
+        width: Dimensions.get('window').width
     }
 })
 
