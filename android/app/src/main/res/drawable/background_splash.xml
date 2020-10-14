@@ -10,4 +10,5 @@
         android:drawable="@mipmap/splash_icon_foreground"
         android:gravity="center" />
 
+
 </layer-list>
