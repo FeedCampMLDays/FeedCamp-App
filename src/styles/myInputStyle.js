@@ -7,7 +7,7 @@ const myInputStyle = StyleSheet.create({
         borderRadius: 20,
         borderWidth: 1,
         borderColor: '#ffe6df',
-        marginVertical: 5,
+        marginVertical: 8,
         alignSelf: 'center',
         flexDirection: 'row'
     },
