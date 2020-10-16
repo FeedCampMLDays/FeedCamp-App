@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "200488654326",
+    "firebase_url": "https://feedcamp-72207.firebaseio.com",
+    "project_id": "feedcamp-72207",
+    "storage_bucket": "feedcamp-72207.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:200488654326:android:9645684cbea888fadb23d7",
+        "android_client_info": {
+          "package_name": "com.feedcamp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "200488654326-a6glaue4ld3279l5qt1nq73hl0t7ktrm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBnNOQLGpJRkAYwUpM0KwaOpSh9Jc6k4yI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "200488654326-a6glaue4ld3279l5qt1nq73hl0t7ktrm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
