@@ -41,7 +41,7 @@ const Login = (props) => {
         <SafeAreaView style={styles.container}>
             <View style={styles.container2}>
                 <LottieView
-                    source={require('../lottie/animal.json')}
+                    source={require('../lottie/dog.json')}
                     autoPlay
                     loop
                     style={styles.lottie}
