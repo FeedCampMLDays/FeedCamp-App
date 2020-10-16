@@ -1,11 +1,42 @@
-import React from 'react'
-import { SafeAreaView, Text, TouchableOpacity, View } from 'react-native'
+import React, { useState } from 'react'
+import { SafeAreaView, Text, TouchableOpacity, View, Alert } from 'react-native'
 import * as Animatable from 'react-native-animatable';
 import LottieView from 'lottie-react-native';
+import auth from '@react-native-firebase/auth';
+import AsyncStorage from '@react-native-community/async-storage';
 import { MyButton, MyInput } from '../components';
 import styles from '../styles/loginStyle'
 
 const Login = (props) => {
+    const [userMail, setUserMail] = useState('')
+    const [userPassword, setUserPassword] = useState('')
+
+    const loginMail = (text) => setUserMail(text)
+    const loginPassword = (text) => setUserPassword(text)
+
+    const loginUser = () => {
+        if (userMail.length != 0 && userPassword.length != 0) {
+            auth()
+                .signInWithEmailAndPassword(userMail, userPassword)
+                .then(() => {
+                    props.navigation.navigate("MainTab")
+                    AsyncStorage.setItem('@USER_ID', auth().currentUser.uid)
+                }).catch((error) => {
+                    if (error.code === 'auth/user-not-found') {
+                        Alert.alert('That account is not found!');
+                    }
+                    if (error.code === 'auth/invalid-email') {
+                        Alert.alert('That email address is invalid!');
+                    }
+                    else {
+                        Alert.alert(error.message)
+                    }
+                })
+        } else {
+            Alert.alert('Please fill in the fields!')
+        }
+    }
+
     return (
         <SafeAreaView style={styles.container}>
             <View style={styles.container2}>
@@ -26,7 +57,7 @@ const Login = (props) => {
                     source={require('../assets/mail_o.png')}
                     placeholder="E-mail"
                     autoCapitalize="none"
-                    onChangeText={null}
+                    onChangeText={loginMail}
                     keyboardType="email-address"
                     secureTextEntry={false}
                     multiline={false}
@@ -36,7 +67,7 @@ const Login = (props) => {
                     source={require('../assets/password_o.png')}
                     placeholder="Password"
                     autoCapitalize="none"
-                    onChangeText={null}
+                    onChangeText={loginPassword}
                     keyboardType="default"
                     secureTextEntry={true}
                     multiline={false}
@@ -49,7 +80,7 @@ const Login = (props) => {
                 </View>
 
                 <MyButton
-                    onPress={() => props.navigation.navigate("Register")}
+                    onPress={loginUser}
                     text="Sign In"
                 />
 

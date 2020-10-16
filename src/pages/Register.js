@@ -41,8 +41,8 @@ const Register = (props) => {
                         database().ref(`Users/${res.user.uid}`).push({
                             userName: userName,
                             userSurname: userSurname,
-                            gender: userGender.valueOf(),
-                            pet: userPet.valueOf()
+                            userGender: userGender.valueOf(),
+                            userPet: userPet.valueOf()
                         });
                         Alert.alert('User account created!')
                         props.navigation.navigate('Login')
