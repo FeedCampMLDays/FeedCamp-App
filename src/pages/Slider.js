@@ -6,19 +6,19 @@ import { SwiperBottom } from '../components/SwiperBottom'
 
 const swiper = [
     {
-        image: require('../assets/slider1.png'),
-        header: "123",
-        text: "asdafghsja"
+        image: require('../assets/slider2.png'),
+        header: "Welcome to FeedCamp",
+        text: "FeedCamp aims to raise awareness to street animals, encourage the volunteer people to respect those (birds, cats, and dogs) animals, and supply their nutritional needs."
     },
     {
-        image: require('../assets/slider2.png'),
-        header: "123",
-        text: "asdafghsja"
+        image: require('../assets/slider1.png'),
+        header: "Upload Photo",
+        text: "As you feed the animals on the street and \n upload photos, FeedCamp will be donating \n more than yours for you"
     },
     {
         image: require('../assets/slider3.png'),
-        header: "123",
-        text: "asdafghsja"
+        header: "PetCoins",
+        text: "Let's get volunteer by uploading photos, \n and start collecting PetCoins"
     }
 ]
 

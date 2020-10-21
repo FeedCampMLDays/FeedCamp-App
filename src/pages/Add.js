@@ -11,7 +11,7 @@ const Add = (props) => {
     }, [])
 
     return (
-        <SafeAreaView style={{ paddingTop: 70 }}>
+        <SafeAreaView style={{ paddingTop: 60 }}>
             <View style={styles.container}>
                 <TouchableOpacity style={styles.qrCon}>
                     <Text style={styles.text}>Scan QR Code</Text>

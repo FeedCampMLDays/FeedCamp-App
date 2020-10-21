@@ -3,8 +3,8 @@ import { Dimensions, StyleSheet } from 'react-native'
 const sliderStyle = StyleSheet.create({
     container: { flex: 1, backgroundColor: '#FFFFFF' },
     image: {
-        width: 400,
-        height: 400,
+        width: 300,
+        height: 300,
         resizeMode: 'contain',
         alignSelf: 'center'
     },
@@ -16,11 +16,12 @@ const sliderStyle = StyleSheet.create({
         textAlign: 'center'
     },
     text: {
+        marginHorizontal: 30,
         marginTop: 50,
         textAlign: 'center'
     },
     buttonCon: {
-        marginTop: 100,
+        marginTop: 80,
         borderRadius: 20,
         backgroundColor: '#fb6a43',
         width: Dimensions.get('window').width / 4,
