@@ -42,7 +42,7 @@ const profileStyle = StyleSheet.create({
         borderRadius: 20,
         borderWidth: 3,
         borderColor: '#ff6a43',
-        marginTop: 40,
+        marginTop: 30,
         justifyContent: 'center'
     },
     publicText: {

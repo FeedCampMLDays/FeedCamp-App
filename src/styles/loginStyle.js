@@ -17,7 +17,6 @@ const loginStyle = StyleSheet.create({
         paddingTop: 30
     },
     headerText: {
-        marginTop: 10,
         color: '#FFFFFF',
         fontWeight: 'bold',
         fontSize: 40,
@@ -35,7 +34,7 @@ const loginStyle = StyleSheet.create({
     lottie: {
         marginVertical: 30,
         width: Dimensions.get('window').width,
-        height: Dimensions.get('window').height / 2.5,
+        height: Dimensions.get('window').height / 2.6,
         alignSelf: 'center'
     },
     forgotCon: {

@@ -26,7 +26,7 @@ const forgotPasswordStyle = StyleSheet.create({
     lottie: {
         marginVertical: 30,
         width: Dimensions.get('window').width,
-        height: Dimensions.get('window').height / 2.5,
+        height: Dimensions.get('window').height / 2.8,
         alignSelf: 'center'
     }
 })

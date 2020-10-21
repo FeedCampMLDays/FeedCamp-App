@@ -6,7 +6,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 import SplashScreen from 'react-native-splash-screen'
 import Provider from './context/Provider'
 
-import { Add, Login, Map, Profile, Register, Slider, ForgotPassword } from '../src/pages'
+import { Add, Login, Map, Profile, Register, Slider, ForgotPassword, Picture, Blog } from '../src/pages'
 
 const Tab = createBottomTabNavigator();
 const Stack = createStackNavigator();
@@ -18,12 +18,14 @@ function Router() {
 
     return (
         <NavigationContainer>
-            <Stack.Navigator initialRouteName="MainTab" screenOptions={{ headerShown: false }}>
+            <Stack.Navigator screenOptions={{ headerShown: false }}>
                 <Stack.Screen name="Slider" component={Slider} />
                 <Stack.Screen name="Login" component={Login} />
                 <Stack.Screen name="ForgotPassword" component={ForgotPassword} />
                 <Stack.Screen name="Register" component={Register} />
                 <Stack.Screen name="MainTab" component={MainTab} />
+                <Stack.Screen name="Picture" component={Picture} />
+                <Stack.Screen name="Blog" component={Blog} />
             </Stack.Navigator>
         </NavigationContainer>
     );

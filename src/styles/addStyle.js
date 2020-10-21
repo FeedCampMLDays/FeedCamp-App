@@ -2,61 +2,39 @@ import { StyleSheet, Dimensions } from 'react-native'
 
 const addStyle = StyleSheet.create({
     container: {
-
-    },
-    addCon: {
         width: Dimensions.get('window').width / 1.3,
-        height: Dimensions.get('window').height / 3,
+        borderWidth: 1,
+        height: Dimensions.get('window').height / 5,
         borderColor: '#fb6a43',
-        borderRadius: 30,
-        borderWidth: 3,
-        alignSelf: 'center',
-        marginTop: 30,
-        justifyContent: 'center',
-        shadowColor: "#000",
-        shadowOffset: {
-            width: 0,
-            height: 2,
-        },
-        shadowOpacity: 0.25,
-        shadowRadius: 3.84,
-        elevation: 5,
-    },
-    image: {
-        height: 100,
-        width: 100,
-        alignSelf: 'center'
-    },
-    preview: {
-        height: Dimensions.get('window').height,
-        justifyContent: 'flex-end',
+        borderRadius: 20,
         alignItems: 'center',
+        alignSelf: 'center',
+        marginTop: 30
     },
-    imageBackground: {
-        width: '100%',
-        height: '100%'
+    qrCon: {
+        backgroundColor: '#fb6a43',
+        height: Dimensions.get('window').height / 24,
+        width: Dimensions.get('window').width / 2,
+        borderRadius: 10,
+        marginTop: 10,
+        alignItems: 'center',
+        justifyContent: 'center'
     },
-    okButtonContainer: {
-        position: 'absolute',
-        bottom: 0,
-        width: '100%'
+    text: {
+        color: '#ffffff',
     },
-    buttonContainer: {
-        width: '100%',
-        position: 'absolute',
-        bottom: 50,
-        right: 0,
-        left: 0,
-        alignItems: 'center'
+    sendCon: {
+        borderWidth: 2,
+        borderRadius: 20,
+        height: Dimensions.get('window').height / 30,
+        width: Dimensions.get('window').width / 3,
+        borderColor: '#fb6a43',
+        margin: 25,
+        alignItems: 'center',
+        justifyContent: 'center'
     },
-    camera: {
-        marginBottom: 20,
-        height: 70,
-        width: 70,
-        resizeMode: 'contain'
-    },
-    imageCon: {
-        height: Dimensions.get('window').height
+    sendText: {
+        color: '#fb6a43'
     }
 })
 

@@ -43,6 +43,9 @@ const Profile = (props) => {
             <TouchableOpacity onPress={null} style={styles.publicCon}>
                 <Text style={styles.publicText}>Donate Pet Food</Text>
             </TouchableOpacity>
+            <TouchableOpacity onPress={() => props.navigation.navigate('Blog')} style={styles.publicCon}>
+                <Text style={styles.publicText}>Information About Animals</Text>
+            </TouchableOpacity>
         </SafeAreaView>
     )
 }

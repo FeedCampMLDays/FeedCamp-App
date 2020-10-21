@@ -2,7 +2,7 @@ import { StyleSheet, Dimensions } from 'react-native'
 
 const myButtonStyle = StyleSheet.create({
     container: {
-        width: Dimensions.get('window').width / 2,
+        width: Dimensions.get('window').width / 1.8,
         height: Dimensions.get('window').height / 16,
         backgroundColor: '#fb6a43',
         borderRadius: 20,
