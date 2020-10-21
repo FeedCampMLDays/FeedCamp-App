@@ -12,13 +12,13 @@ const Tab = createBottomTabNavigator();
 const Stack = createStackNavigator();
 
 function Router() {
-    useEffect(() => {
-        SplashScreen.hide()
-    }, [])
+    // useEffect(() => {
+    //     SplashScreen.hide()
+    // }, [])
 
     return (
         <NavigationContainer>
-            <Stack.Navigator initialRouteName="Slider" screenOptions={{ headerShown: false }}>
+            <Stack.Navigator initialRouteName="MainTab" screenOptions={{ headerShown: false }}>
                 <Stack.Screen name="Slider" component={Slider} />
                 <Stack.Screen name="Login" component={Login} />
                 <Stack.Screen name="ForgotPassword" component={ForgotPassword} />
